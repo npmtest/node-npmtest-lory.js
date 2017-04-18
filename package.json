@@ -1,1 +1,40 @@
-{     "devDependencies": {         "lory.js": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-lory.js",     "homepage": "https://github.com/npmtest/node-npmtest-lory.js",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-lory.js.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [lory.js (v2.2.1)](https://github.com/meandmax/lory#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-lory.js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-lory.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-lory.js.svg)](https://travis-ci.org/npmtest/node-npmtest-lory.js)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "lory.js": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-lory.js",
+    "keywords": [
+        "coverage",
+        "test",
+        "lory.js"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_lory.js.js",
+    "name": "npmtest-lory.js",
+    "nameAlias": "npmtest_lory_js",
+    "nameOriginal": "npmtest-lory.js",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-lory.js.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
