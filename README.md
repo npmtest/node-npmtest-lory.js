@@ -1,6 +1,6 @@
 # npmtest-lory.js
 
-#### test coverage for  [lory.js (v2.2.1)](https://github.com/meandmax/lory#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-lory.js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-lory.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-lory.js.svg)](https://travis-ci.org/npmtest/node-npmtest-lory.js)
+#### basic test coverage for  [lory.js (v2.2.1)](https://github.com/meandmax/lory#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-lory.js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-lory.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-lory.js.svg)](https://travis-ci.org/npmtest/node-npmtest-lory.js)
 
 #### Touch enabled minimalistic slider written in vanilla JavaScript.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-lory.js/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-lory.js/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-lory.js/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-lory.js/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-lory.js/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-lory.js/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-lory.js/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-lory.js/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-lory.js/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-lory.js/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-lory.js/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-lory.js/build/coverage.html/index.html)
 
@@ -181,7 +181,8 @@
         "start": "better-npm-run start",
         "travis": "npm run build && npm run karma-travis"
     },
-    "version": "2.2.1"
+    "version": "2.2.1",
+    "bin": {}
 }
 ```
 
